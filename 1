@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="加齢臭改善サロン laundry">
+    <meta name="keywords" content="加齢臭, 改善, サロン, スチームサウナ, オイルマッサージ, 脱毛">
+    <title>加齢臭改善サロン laundry</title>
+    <style>
+        /* 全体のスタイル */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f2f9ff;
+            color: #333;
+        }
+
+        /* ヘッダー */
+        header {
+            background-color: #1e90ff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* ヒーローセクション */
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            color: white;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero .cta-button {
+            background-color: #00bcd4;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        /* サービスページ */
+        #services {
+            padding: 50px;
+            background-color: #e0f7fa;
+            text-align: center;
+        }
+
+        #services h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .service-item {
+            margin-bottom: 30px;
+        }
+
+        .service-item h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        /* お問い合わせページ */
+        #contact {
+            padding: 50px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        #contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #contact label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        #contact input, #contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #contact button {
+            padding: 10px 20px;
+            background-color: #1e90ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* フッター */
+        footer {
+            background-color: #1e90ff;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="laundryロゴ">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#services">サービス</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+                <li><a href="#blog">ブログ</a></li>
+                <li><a href="#about">会社概要</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- トップページ -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>清潔感に、投資する</h1>
+            <p>気づかないうちに発している、嫌な加齢臭を改善します。</p>
+            <a href="#services" class="cta-button">サービスを見る</a>
+        </div>
+    </section>
+
+    <!-- サービスページ -->
+    <section id="services">
+        <h2>サービス内容</h2>
+        <div class="service-item">
+            <h3>スチームサウナ</h3>
+            <p>身体の中からリフレッシュ。</p>
+        </div>
+        <div class="service-item">
+            <h3>オイルマッサージ</h3>
+            <p>疲れを癒やし、リラックス。</p>
+        </div>
+        <div class="service-item">
+            <h3>脱毛</h3>
+            <p>清潔感を手に入れる。</p>
+        </div>
+    </section>
+
+    <!-- お問い合わせページ -->
+    <section id="contact">
+        <h2>お問い合わせ</h2>
+        <form action="#" method="POST">
+            <label for="name">お名前</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">メッセージ</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">送信</button>
+        </form>
+    </section>
+
+    <!-- フッター -->
+    <footer>
+        <p>&copy; 2025 加齢臭改善サロン laundry</p>
+    </footer>
+</body>
+</html>
